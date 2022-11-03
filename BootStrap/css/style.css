@@ -1,0 +1,90 @@
+/* Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.row {
+    margin: 0;
+}
+.container {
+    padding: 70px 0;
+}
+p, li {
+    color: gray;
+    font-size: 14px;
+}
+
+/* Barra de Navegação */
+header, .navbar {
+    background-color: darkgray;
+}
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#logo {
+    width: 75px;
+}
+.navbar-brand {
+    padding: 0;
+    color: white;
+}
+.navbar-brand:hover {
+    color: white;
+}
+#navbar-links a {
+    color: white;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+/* Slider */
+.container-fluid {
+    padding: 0;
+}
+
+#mainSlider .carousel-inner, #mainSlider .corousel-item, .d-block {
+    height: 90vh;
+}
+
+#mainSlider .carousel-caption {
+    top: 30%
+}
+
+#mainSlider .carousel-caption h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#mainSlider .carousel-caption p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 180px;
+    color: white;
+}
+
+.main-btn {
+    background-color: aqua;
+    color: white;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.main-btn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border-color: aqua;
+}
+
+.carousel-indicators .active {
+    background-color: aqua;
+}
+
+
+
