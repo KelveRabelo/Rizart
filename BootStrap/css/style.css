@@ -1,4 +1,9 @@
 /* Gerais */
+
+* {
+    list-style: none;
+    text-decoration: none;
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -15,7 +20,7 @@ p, li {
 
 /* Barra de Navegação */
 header, .navbar {
-    background-color: darkgray;
+    background-color: rgb(51, 49, 49);
 }
 #nav-container {
     padding-top: 0;
@@ -42,11 +47,9 @@ header, .navbar {
 .container-fluid {
     padding: 0;
 }
-
 #mainSlider .carousel-inner, #mainSlider .corousel-item, .d-block {
     height: 90vh;
 }
-
 #mainSlider .carousel-caption {
     top: 30%
 }
@@ -61,9 +64,8 @@ header, .navbar {
     margin-bottom: 180px;
     color: white;
 }
-
 .main-btn {
-    background-color: aqua;
+    background-color: #00a2ff;
     color: white;
     text-transform: uppercase;
     width: 200px;
@@ -74,17 +76,82 @@ header, .navbar {
     transition: 0.5s;
     text-decoration: none;
 }
-
 .main-btn:hover {
     text-decoration: none;
     color: white;
     background-color: transparent;
-    border-color: aqua;
+    border-color: #00a2ff;
 }
-
 .carousel-indicators .active {
-    background-color: aqua;
+    background-color: #00a2ff;
 }
 
+/* SOBRE A EMPRESA*/
+#about-area {
+    background-color: lightgray;
+}
+.main-title {
+    color: gray;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+.main-title::after {
+    content: "";
+    border-top: 2px solid grey;
+    width: 20%;
+    position: absolute;
+    top: 720px;
+    left: 40%;
+}
+.about-title {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#about-list {
+    padding-left: 0px;
+}
+#about-list li {
+    line-height: 50px;
+}
+#about-list i {
+    color: #00a2ff;
+    margin-right: 10px;
+}
 
+/* SERVIÇOS*/
+.service-box {
+    text-align: center;
+    margin-bottom: 58px;
+}
+.service-box i, .service-box h4 {
+    transition: 0.5s;
+}
 
+.service-box i {
+    font-size: 36px;
+    margin-bottom: 28px;
+    color: gray;
+}
+.service-box h4{
+    font-size: 24px;
+    margin-bottom: 28px;
+}
+.service-box:hover > i, .service-box:hover > h4 {
+    color: #00a2ff;
+    cursor: pointer;
+}
+
+/*DADOS*/
+.circle-box div {
+    padding: 0 40px;
+}
+
+#data-area .container p {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
