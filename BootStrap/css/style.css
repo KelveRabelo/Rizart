@@ -204,11 +204,11 @@ header, .navbar {
 .project-box {
     margin-bottom: 30px;
   }
-  #filter-btn-box {
+#filter-btn-box {
     margin-bottom: 50px;
     text-align: center;
-  }
-  #portfolio-area .filter-btn {
+}
+#portfolio-area .filter-btn {
     color: #444;
     border: 1px solid #444;
     background-color: transparent;
@@ -219,9 +219,144 @@ header, .navbar {
     height: 40px;
     line-height: 40px;
     padding: 0 20px;
-  }
-  #portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
+}
+#portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
     color: #FFF;
     border: 1px solid #00a2ff;
     background-color: #00a2ff;
+}
+
+  /*NEWS LATTER*/
+#news-area {
+    text-align: center;
+    background-color: white;
   }
+#news-area p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+#email-input {
+    border-radius: 0;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    border: 1px solid #00a2ff;
+    display: inline;
+    box-sizing: border-box;
+    width: 40%;
+    height: 40px;
+}
+#news-btn {
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    border: 1px solid #00a2ff;
+    background-color: #00a2ff;
+    text-transform: uppercase;
+    color: white;
+    height: 40px;
+    padding: 0 30px;
+    margin-left: -130px;
+    position: absolute;
+    transition: 0.5s;
+}
+#news-btn:hover {
+    background-color: white;
+    color: #00a2ff;
+}
+
+/*call to action*/
+#call-area {
+    background-color: #00a2ff;
+    text-transform: uppercase;
+}
+#call-area .container {
+    padding: 40px 10px;
+}
+#call-area .row {
+    display: block;
+    text-align: center;
+}
+#call-area p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: auto;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    display: inline;
+    height: 60px;
+    line-height: 60px;
+}
+#call-area #call-btn {
+    background-color: white;
+    color: #00a2ff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+    width: auto;
+    letter-spacing: 2px;
+}
+
+/*FOOTER*/
+#contact-area {
+    text-align: center;
+}
+.contact-box {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #00a2ff;
+}
+.contact-box i {
+    color: gray;
+    border: solid 1px gray;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    font-size: 16px;
+}
+.contact-title {
+    font-weight: bold;
+    color: #00a2ff;
+}
+
+#msg-box {
+    font-size: 20px;
+}
+#contact-form input[type="text"], #contact-form textarea {
+    margin-bottom: 15px;
+    border-radius: 0;
+}  
+#contact-form .main-btn {
+    width: 120px;
+    height: 50px;
+}
+#contact-form .main-btn:hover {
+    color: #00a2ff;
+}
+
+/*COPY*/
+#copy-area {
+    background-color: white;
+}
+#copy-area .container {
+    padding: 10px 0;
+    text-align: center;
+}
+#copy-area .container p {
+    margin-bottom: 0;
+}
+#copy-area .container a {
+    font-weight: bold;
+    color: gray;
+}
+
+#copy-area .container a:hover {
+    text-decoration: none;
+    color: #00a2ff;
+}
+
