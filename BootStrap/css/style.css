@@ -53,7 +53,6 @@ header, .navbar {
 #mainSlider .carousel-caption {
     top: 30%
 }
-
 #mainSlider .carousel-caption h2 {
     font-size: 30px;
     margin-bottom: 30px;
@@ -128,7 +127,6 @@ header, .navbar {
 .service-box i, .service-box h4 {
     transition: 0.5s;
 }
-
 .service-box i {
     font-size: 36px;
     margin-bottom: 28px;
@@ -147,7 +145,6 @@ header, .navbar {
 .circle-box div {
     padding: 0 40px;
 }
-
 #data-area .container p {
     color: white;
     font-weight: 500;
@@ -155,3 +152,76 @@ header, .navbar {
     font-size: 20px;
     margin-top: 20px;
 }
+
+/*TIME*/
+.card-body {
+    text-align: center;
+}
+
+/*TRABELHE CONOSCO*/
+#apply-area {
+    height: 580px;
+}
+#apply-area .container-fluid, #apply-area .row {
+    height: 100%;
+}
+#apply-area .apply-box {
+    text-align: center;
+    padding: 70px 50px;
+}
+#company-img {
+    background-image: url("../img/empresa.jpg");
+    background-size: cover;
+    height: 100%;
+}
+#pattern-img h4, #pattern-img p {
+    color: white;
+}
+#pattern-img h4 {
+    margin-top: 8%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+#pattern-img p {
+    margin-bottom: 20px;
+}
+#apply-btn {
+    display: block;
+    height: auto;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: transparent;
+    border-color: white;
+}
+#apply-btn:hover {
+    border-color: #00a2ff;
+    background-color: #00a2ff;
+}
+
+/*PORTIFOLIO*/
+.project-box {
+    margin-bottom: 30px;
+  }
+  #filter-btn-box {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  #portfolio-area .filter-btn {
+    color: #444;
+    border: 1px solid #444;
+    background-color: transparent;
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+  }
+  #portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
+    color: #FFF;
+    border: 1px solid #00a2ff;
+    background-color: #00a2ff;
+  }
