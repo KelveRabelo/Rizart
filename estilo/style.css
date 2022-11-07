@@ -1,0 +1,431 @@
+@charset "UTF-8";
+
+/*azul
+verde
+amarelo
+vermelho*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: none;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh; 
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+#logo {
+    height: 300px;
+    margin-top: -80px;
+    margin-left: 20px;
+    margin-bottom: -80px;
+    padding: 0px;
+    background-image: url("../img/logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.navbar {
+    margin: 0px;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar ul li {
+    font-size: 16px;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.s {
+    margin-left: -12px;
+}
+.p {
+    margin-left: -4px;
+}
+.navbar li:before {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    transform: scale(0.9);
+    transition: .5s;
+}
+.navbar li:hover:before {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #afe781;
+    filter: blur(5px);
+}
+.navbar li:hover {
+    box-shadow: 0 0 15px #afe781;
+    text-shadow: 0 0 15px #afe781;
+}
+
+/*BARRA*/
+.barra {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.barra div{
+    height: 5px;
+    border-radius: 50px;
+    background-color: #afe781;
+}
+.barra div:nth-child(1) {
+    width: 50px;
+    margin-left: 5px;
+
+}
+.barra div:nth-child(2) {
+    width: 50px;
+    margin-left: -10px;
+
+}
+.barra div:nth-child(3) {
+    width: 70px;
+
+}
+.barra div:nth-child(4) {
+    width: 70px;
+}
+/*====================*/
+
+/*CONTEUDO PRINCIPAL*/
+#content {
+    display: flex;
+}
+/*====================*/
+
+/*BARRA LATERAL*/
+.sidebar {
+    display: none;
+    background-image: linear-gradient(to top, purple, pink);
+    border-right: 2px white solid;
+}
+/*====================*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/*==========HOME==========*/
+#home {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.slider {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.slides {
+    width: 600%;
+    height: 50%;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+.slide {
+    width: 30%;
+    transition: 2s;
+}
+.slide img {
+    width: 100%;
+}
+.manual-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn {
+    position: relative;
+    border: 5px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+.manual-btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+#radio5:checked ~ .first {
+    margin-left: -100%;
+}
+.navigation-auto {
+    width: 100%;
+    margin-top: 300px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div {
+    border: 5px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: white;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background-color: white;
+}
+/*==========END==========*/
+
+
+/*==========SOBRE==========*/
+#sobre {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 460px;
+
+}
+.sobre {
+    width: 100%;
+    padding: 30px;
+    text-indent: 30px;
+}
+.sobre h2{
+    margin-bottom: 30px;
+    text-align: center;
+    color: #afe781;
+}
+.sobre-img {
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    padding-top: 100%;
+    background-image: url("../img/foto4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+.sobre-img:before {
+    transform: scale(1);
+    transition: .5s;
+}
+.sobre-img:hover:before {
+    transform: scale(1);
+    box-shadow: 0 0 15px #afe781;
+    filter: blur(4px);
+}
+.sobre-img:hover {
+    box-shadow: 0 0 15px #afe781;
+}
+/*==========END==========*/
+
+
+/*==========PRODUTOS==========*/
+#produto {
+    padding: auto;
+    margin-bottom: 20px;
+    color: #afe781;
+}
+.container-imagem {
+    width: 80%;
+    height: 20%;
+    padding: 10px;
+    margin-bottom: 50px;
+    gap: 10px;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;;
+}
+.container-imagem .grupo-img1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+}
+.foto-1 {
+    height: 50%;
+    background-image: url("../img/decoracao2.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.foto-1:hover {
+    background-image: url("../img/decoracao3.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+.foto-2 {
+    height: 50%;
+    background-image: url("../img/presente2.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.foto-2:hover {
+    background-image: url("../img/churrasco.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+.container-imagem .grupo-img2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.foto-3 {
+    height: 33.33%;
+    border-radius: 10px;
+    background-image: url("../img/moveis.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.foto-3:hover {
+    background-image: url("../img/decoracao.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+.foto-4 {
+    height: 33.33%;
+    background-image: url("../img/churrasco.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.foto-4:hover {
+    background-image: url("../img/presente.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+.foto-5 {
+    height: 33.33%;
+    background-image: url("../img/decoracao2.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.foto-5:hover {
+    background-image: url("../img/decoracao.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+/*==========END==========*/
+
+
+/*==========CONTATOS==========*/
+#contatos {
+    margin-top: 50px;
+    margin-bottom: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contatos ul {
+    display: flex;
+}
+#contatos ul li {
+    width: 50px;
+    height: 50px;
+    color: black;
+    background-color: #afe781;
+    font-size: 30px;
+    display: block;
+    position: relative;
+    line-height: 55px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+}
+ion-icon {
+    margin-left: 11px;
+}
+#contatos ul li:before {
+    content: '';
+    top: 0;
+    left: 0;
+    background-color : #afe781;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: .5s;
+}
+#contatos ul li:hover:before {
+    transform: scale(1.2);
+    filter: blur(3px);
+    box-shadow: 0 0 15px #afe781;
+
+}
+#contatos ul li:hover {
+    box-shadow: 0 0 15px #afe781;
+    text-shadow: 0 0 15px #afe781;
+}
+/*==========END==========*/
+
+
+/*==========FOOTER==========*/
+footer {
+    height: 8vh;
+    background-color: rgba(128, 128, 128, 0);
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+    padding-top: 3vh;
+}
+/*==========END==========*/
