@@ -57,12 +57,12 @@ $(document).ready(function () {
     $('.main-btn').removeClass('active');
     $(this).addClass('active');
 
-    if(type == 'dsg-btn') {
-      eachBoxes('dsg', boxes);
+    if(type == 'moveis-btn') {
+      eachBoxes('moveis', boxes);
     } else if(type == 'dev-btn') {
-      eachBoxes('dev', boxes);
+      eachBoxes('moveis', boxes);
     } else if(type == 'seo-btn') {
-      eachBoxes('seo', boxes);
+      eachBoxes('churrasco', boxes);
     } else {
       eachBoxes('all', boxes);
     }
@@ -92,7 +92,7 @@ $(document).ready(function () {
   let aboutSection = $('#about-area');
   let servicesSection = $('#services-area');
   let teamSection = $('#team-area');
-  let portfolioSection = $('#portfolio-area');
+  let portfolioSection = $('#portifolio-area');
   let contactSection = $('#contact-area');
 
   let scrollTo = '';
@@ -107,7 +107,7 @@ $(document).ready(function () {
       scrollTo = servicesSection;
     } else if(btnId == 'team-menu') {
       scrollTo = teamSection;
-    } else if(btnId == 'portfolio-menu') {
+    } else if(btnId == 'portifolio-menu') {
       scrollTo = portfolioSection;
     } else if(btnId == 'contact-menu') {
       scrollTo = contactSection;
