@@ -57,16 +57,26 @@ $(document).ready(function () {
     $('.main-btn').removeClass('active');
     $(this).addClass('active');
 
-    if(type == 'moveis-btn') {
+    if(type == 'moveis-btn') 
+    {
       eachBoxes('moveis', boxes);
-    } else if(type == 'dev-btn') {
-      eachBoxes('moveis', boxes);
-    } else if(type == 'seo-btn') {
+    } 
+    else if(type == 'presente-btn') 
+    {
+      eachBoxes('presente', boxes);
+    } 
+    else if(type == 'churrasco-btn') 
+    {
       eachBoxes('churrasco', boxes);
-    } else {
+    } 
+    else if(type == 'decoracoes-btn') 
+    {
+      eachBoxes('decoracoes', boxes);
+    }
+    else 
+    {
       eachBoxes('all', boxes);
     }
-
   });
 
   function eachBoxes(type, boxes) {
