@@ -56,17 +56,18 @@ header, .navbar {
     height: 90vh;
 }
 #mainSlider .carousel-caption {
-    top: 30%
+    top: 50%
 }
 #mainSlider .carousel-caption h2 {
     font-size: 30px;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 #mainSlider .carousel-caption p {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 180px;
-    color: white;
+    color: #fff;
 }
 .main-btn {
     background-color: #00a2ff;
@@ -431,17 +432,9 @@ header, .navbar {
 
 @media (max-width: 425px) {
         /*SLIDE*/
-    #mainSlider .carousel-caption {
-        top: 5%;
-    }
-    #mainSlider .carousel-caption h2 {
-        font-size: 18px;
-        margin-bottom: 70%;
-    }
     .carousel-caption .main-btn {
         font-size: 14px;
     }
-
     /*ABOUT AREA*/
     .main-title {
         font-size: 30px;
@@ -461,7 +454,6 @@ header, .navbar {
     #team-area .col-md-3 {
         width: 50%;
         margin-bottom: 30px;
-
     }
 
     /*APPLY*/
@@ -497,7 +489,6 @@ header, .navbar {
         letter-spacing: 0;
         margin: 0;
         width: 50%;
-
     }
     #call-area #call-btn {
         font-size: 16px;
