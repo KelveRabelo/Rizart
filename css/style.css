@@ -79,15 +79,15 @@ header, .navbar {
     height: 90vh;
 }
 #mainSlider .carousel-caption {
-    top: 50%
+    top: 35%
 }
 #mainSlider .carousel-caption h2 {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 30px;
     font-weight: bold;
 }
 #mainSlider .carousel-caption p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 180px;
     color: #fff;
@@ -120,11 +120,11 @@ header, .navbar {
 }
 #about-area img {
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 .main-title {
     color: gray;
-    margin: 0 0 65px 0;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 }
 /*
@@ -173,6 +173,9 @@ header, .navbar {
 }
 
 /*DADOS*/
+.circle-box {
+    width: 50%;
+}
 .circle-box div {
     padding: 0 40px;
 }
@@ -185,13 +188,18 @@ header, .navbar {
 }
 
 /*TIME*/
+#team-area .col-md-3 {
+    width: 50%;
+    margin-bottom: 30px;
+}
 .card-body {
     text-align: center;
 }
 
+
 /*TRABELHE CONOSCO*/
 #apply-area {
-    height: 580px;
+    height: auto;
 }
 #apply-area .container-fluid, #apply-area .row {
     height: 100%;
@@ -233,8 +241,9 @@ header, .navbar {
 
 /*PORTIFOLIO*/
 .project-box {
+    width: 50%;
     margin-bottom: 30px;
-  }
+}
 #filter-btn-box {
     margin-bottom: 50px;
     text-align: center;
@@ -250,6 +259,7 @@ header, .navbar {
     height: 40px;
     line-height: 40px;
     padding: 0 20px;
+    margin-bottom: 20px;
 }
 #portifolio-area .filter-btn.active, #portifolio-area .filter-btn:hover {
     color: #FFF;
@@ -261,9 +271,13 @@ header, .navbar {
 #news-area {
     text-align: center;
     background-color: white;
-  }
+}
+#news-area .main-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
 #news-area p {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 40px;
 }
 #email-input {
@@ -273,7 +287,7 @@ header, .navbar {
     border: 1px solid #00a2ff;
     display: inline;
     box-sizing: border-box;
-    width: 40%;
+    width: 80%;
     height: 40px;
 }
 #news-btn {
@@ -298,31 +312,33 @@ header, .navbar {
 #call-area {
     background-color: #00a2ff;
     text-transform: uppercase;
+
 }
 #call-area .container {
-    padding: 40px 10px;
+    margin: 0;
+    padding: 0;
 }
 #call-area .row {
     display: block;
     text-align: center;
 }
 #call-area p {
+    margin: 0;
+    padding: 0;
     color: white;
     font-weight: bold;
-    font-size: 20px;
-    width: auto;
+    font-size: 12px;
     letter-spacing: 2px;
     display: inline;
-    line-height: 40px;
 }
 #call-area #call-btn {
     background-color: white;
     color: #00a2ff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
-    margin-left: 30px;
     width: auto;
-    height: 34px;
+    height: auto;
+    margin: 0;
     padding: 0;
 }
 
@@ -345,7 +361,6 @@ header, .navbar {
     font-size: 30px;
     margin-bottom: 20px;
 }
-
 .contact-box p {
     font-size: 16px;
 }
@@ -367,6 +382,7 @@ header, .navbar {
 #contact-form .main-btn:hover {
     color: #00a2ff;
 }
+
 /*COPY*/
 #copy-area {
     background-color: white;
@@ -377,6 +393,7 @@ header, .navbar {
 }
 #copy-area .container p {
     margin-bottom: 0;
+    font-size: 14px;
 }
 #copy-area .container a {
     font-weight: bold;
@@ -392,16 +409,15 @@ header, .navbar {
     .container {
         padding: 20px 0;
     }
-
-        /*SLIDE*/
+    /*SLIDE*/
     #mainSlider .carousel-inner, #mainSlider .corousel-item {
         height: auto;
     }
     #mainSlider .carousel-caption h2 {
-        font-size: 20px;
+        font-size: 26px;
     }
     #mainSlider .carousel-caption p {
-        font-size: 16px;
+        font-size: 20px;
         margin-bottom: 40px;
     }
     .carousel-caption {
@@ -411,7 +427,7 @@ header, .navbar {
 
     /*ABOUT AREA*/
     #about-area img {
-        margin-top: 100px;
+        margin-top: 20px;
     }
 
     /*DATA*/
@@ -426,10 +442,14 @@ header, .navbar {
     .card-text {
         font-size: 12px;
     }
-
-    /*APPLY*/
+    
+    /*TRABALHE CONOSCO*/
     #apply-area .apply-box {
         padding: 100px 25px;
+    }
+
+    #company-img {
+        height: 100%;
     }
 
     /*NEWS AREA*/
@@ -454,67 +474,8 @@ header, .navbar {
 }
 
 @media (max-width: 425px) {
-        /*SLIDE*/
-    .carousel-caption .main-btn {
-        font-size: 14px;
-    }
-    /*ABOUT AREA*/
-    .main-title {
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-    #about-area img {
-        margin-top: 0px;
-        margin-bottom: 30px;
-    }
-
-    /*DATA*/
-    .circle-box {
-        width: 50%;
-    }
-
-    /*TEAM*/
-    #team-area .col-md-3 {
-        width: 50%;
-        margin-bottom: 30px;
-    }
-
-    /*APPLY*/
-    #apply-area {
-        height: auto;
-    }
     #company-img {
         display: none;
-    }
-
-    /*FILTER*/
-    #portifolio-area .filter-btn {
-        margin-bottom: 20px;
-    }
-    .project-box {
-        width: 50%;
-    }
-
-    /*NEWS AREA*/
-    #news-area .main-title {
-        font-size: 24px;
-    }
-    #news-area p {
-        font-size: 16px;
-    }
-    #email-input {
-        width: 80%;
-    }
-
-    /*CALL AREA*/
-    #call-area p, #call-area #call-btn {
-        font-size: 12px;
-        letter-spacing: 0;
-        margin: 0;
-        width: 50%;
-    }
-    #call-area #call-btn {
-        font-size: 16px;
     }
 
     /*CONTACTS*/
