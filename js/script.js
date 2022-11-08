@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     function animationData() {
         let duration = [1400, 1600, 2000, 2200];
-        let number = [60, 254, 3, 5243];
+        let number = [150, 254, 4, 5243];
         let c = 65;
         for (let toCircle = 0; toCircle < 4; toCircle++){
 
