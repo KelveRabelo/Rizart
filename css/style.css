@@ -409,7 +409,7 @@ header, .navbar {
 }
 
 /*RESPONSIVO*/
-@media(min-width: 700px) and (max-width: 768px) {
+@media(min-width: 700px) {
     .container {
         padding: 20px 0;
     }
