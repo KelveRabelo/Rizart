@@ -38,7 +38,8 @@ header, .navbar {
     padding: 0;
     color: white;
     font-size: 2.5em;
-    font-family: 'Josefin Sans', sans-serif;
+    /*font-family: 'Josefin Sans', sans-serif;*/
+    font-family: monospace;
     text-shadow: 3px 3px 5px #00a2ff
 }
 #logo h1 span{
@@ -192,10 +193,12 @@ header, .navbar {
     width: 50%;
     margin-bottom: 30px;
 }
+#team-area .col-md-3 img {
+    height: 300px;
+}
 .card-body {
     text-align: center;
 }
-
 
 /*TRABELHE CONOSCO*/
 #apply-area {
@@ -287,7 +290,7 @@ header, .navbar {
     border: 1px solid #00a2ff;
     display: inline;
     box-sizing: border-box;
-    width: 80%;
+    width: 90%;
     height: 40px;
 }
 #news-btn {
@@ -302,6 +305,7 @@ header, .navbar {
     margin-left: -130px;
     position: absolute;
     transition: 0.5s;
+    width: auto;
 }
 #news-btn:hover {
     background-color: white;
