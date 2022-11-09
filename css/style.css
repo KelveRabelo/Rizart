@@ -409,7 +409,7 @@ header, .navbar {
 }
 
 /*RESPONSIVO*/
-@media(max-width: 768px) {
+@media(min-width: 700px) and (max-width: 768px) {
     .container {
         padding: 20px 0;
     }
@@ -419,6 +419,7 @@ header, .navbar {
     }
     #mainSlider .carousel-caption h2 {
         font-size: 26px;
+        margin-top: 80px;
     }
     #mainSlider .carousel-caption p {
         font-size: 20px;
@@ -430,32 +431,50 @@ header, .navbar {
     }
 
     /*ABOUT AREA*/
+    #about-area {
+        margin-bottom: 20px;
+    }
     #about-area img {
         margin-top: 20px;
     }
+    #about-area .main-title {
+        margin-bottom: 20px;
+    }
+
+    /* SERVIÇOS*/
+    #services-area .main-title {
+        margin-bottom: 40px;
+    }
+    .service-box {
+        width: 50%;
+    }
 
     /*DATA*/
-    .circle-box div {
-        padding: 0 10px;
+    #data-area {
+        margin-bottom: 20px;
     }
-    #data-area  p {
-        font-size: 16px;
+    .circle-box {
+        width: 25%;
     }
-
     /*TEAM*/
-    .card-text {
-        font-size: 12px;
+    #team-area .main-title {
+        margin-bottom: 20px;
+     
     }
     
     /*TRABALHE CONOSCO*/
-    #apply-area .apply-box {
-        padding: 100px 25px;
+    #apply-area {
+        margin-bottom: 20px;
     }
-
     #company-img {
-        height: 100%;
+        height: auto;
     }
 
+    /*PORTIFOLIO*/
+    #portifolio-area .main-title {
+        margin-bottom: 40px;
+
+    }
     /*NEWS AREA*/
     #news-area p {
         width: 80%;
