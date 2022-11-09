@@ -24,7 +24,6 @@ header, .navbar {
     border-bottom: 5px solid;
     border-image: linear-gradient(to right, rgb(221, 59, 59) 25%, #00a2ff 25%, #00a2ff 50%, rgb(16, 173, 16) 50%, rgb(16, 173, 16) 75%, yellow 75%) 5;
   }
-
 #nav-container {
     padding-top: 0;
     padding-bottom: 0;
@@ -73,6 +72,9 @@ header, .navbar {
 }
 
 /* Slider */
+#mainSlider {
+
+}
 .container-fluid {
     padding: 0;
 }
@@ -119,15 +121,17 @@ header, .navbar {
 #about-area {
     background-color: lightgray;
 }
-#about-area img {
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
 .main-title {
     color: gray;
     font-size: 30px;
     text-align: center;
+    margin-top: -50px;
 }
+#about-area img {
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
 /*
 .main-title::after {
     content: "";
