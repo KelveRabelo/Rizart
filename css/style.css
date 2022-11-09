@@ -457,9 +457,13 @@ header, .navbar {
         width: 25%;
     }
     /*TEAM*/
+   
     #team-area .main-title {
         margin-bottom: 20px;
-     
+    }
+
+    #team-area .col-md-3 {
+        width: 25%;
     }
     
     /*TRABALHE CONOSCO*/
